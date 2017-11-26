@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		6DC4DE471FCA3B9100EFBB8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC4DE461FCA3B9100EFBB8A /* AppDelegate.swift */; };
-		6DC4DE491FCA3B9100EFBB8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC4DE481FCA3B9100EFBB8A /* ViewController.swift */; };
 		6DC4DE4C1FCA3B9100EFBB8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DC4DE4A1FCA3B9100EFBB8A /* Main.storyboard */; };
 		6DC4DE4E1FCA3B9100EFBB8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC4DE4D1FCA3B9100EFBB8A /* Assets.xcassets */; };
 		6DC4DE511FCA3B9100EFBB8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DC4DE4F1FCA3B9100EFBB8A /* LaunchScreen.storyboard */; };
 		6DC4DE5C1FCA3B9200EFBB8A /* PodcastTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC4DE5B1FCA3B9200EFBB8A /* PodcastTimerTests.swift */; };
 		6DC4DE671FCA3B9200EFBB8A /* PodcastTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC4DE661FCA3B9200EFBB8A /* PodcastTimerUITests.swift */; };
+		6DC4DE781FCA3CFE00EFBB8A /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC4DE771FCA3CFE00EFBB8A /* CountDownViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		6DC4DE431FCA3B9100EFBB8A /* PodcastTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC4DE461FCA3B9100EFBB8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6DC4DE481FCA3B9100EFBB8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6DC4DE4B1FCA3B9100EFBB8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DC4DE4D1FCA3B9100EFBB8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DC4DE501FCA3B9100EFBB8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		6DC4DE621FCA3B9200EFBB8A /* PodcastTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PodcastTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC4DE661FCA3B9200EFBB8A /* PodcastTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastTimerUITests.swift; sourceTree = "<group>"; };
 		6DC4DE681FCA3B9200EFBB8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DC4DE771FCA3CFE00EFBB8A /* CountDownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDownViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,8 @@
 		6DC4DE451FCA3B9100EFBB8A /* PodcastTimer */ = {
 			isa = PBXGroup;
 			children = (
+				6DC4DE761FCA3CFE00EFBB8A /* Views */,
 				6DC4DE461FCA3B9100EFBB8A /* AppDelegate.swift */,
-				6DC4DE481FCA3B9100EFBB8A /* ViewController.swift */,
 				6DC4DE4A1FCA3B9100EFBB8A /* Main.storyboard */,
 				6DC4DE4D1FCA3B9100EFBB8A /* Assets.xcassets */,
 				6DC4DE4F1FCA3B9100EFBB8A /* LaunchScreen.storyboard */,
@@ -123,6 +123,14 @@
 				6DC4DE681FCA3B9200EFBB8A /* Info.plist */,
 			);
 			path = PodcastTimerUITests;
+			sourceTree = "<group>";
+		};
+		6DC4DE761FCA3CFE00EFBB8A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6DC4DE771FCA3CFE00EFBB8A /* CountDownViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DC4DE491FCA3B9100EFBB8A /* ViewController.swift in Sources */,
+				6DC4DE781FCA3CFE00EFBB8A /* CountDownViewController.swift in Sources */,
 				6DC4DE471FCA3B9100EFBB8A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

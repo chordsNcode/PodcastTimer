@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6DC4DE471FCA3B9100EFBB8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC4DE461FCA3B9100EFBB8A /* AppDelegate.swift */; };
+		6DC4DE491FCA3B9100EFBB8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC4DE481FCA3B9100EFBB8A /* ViewController.swift */; };
+		6DC4DE4C1FCA3B9100EFBB8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DC4DE4A1FCA3B9100EFBB8A /* Main.storyboard */; };
+		6DC4DE4E1FCA3B9100EFBB8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC4DE4D1FCA3B9100EFBB8A /* Assets.xcassets */; };
+		6DC4DE511FCA3B9100EFBB8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DC4DE4F1FCA3B9100EFBB8A /* LaunchScreen.storyboard */; };
+		6DC4DE5C1FCA3B9200EFBB8A /* PodcastTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC4DE5B1FCA3B9200EFBB8A /* PodcastTimerTests.swift */; };
+		6DC4DE671FCA3B9200EFBB8A /* PodcastTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC4DE661FCA3B9200EFBB8A /* PodcastTimerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DC4DE581FCA3B9200EFBB8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DC4DE3B1FCA3B9100EFBB8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DC4DE421FCA3B9100EFBB8A;
+			remoteInfo = PodcastTimer;
+		};
+		6DC4DE631FCA3B9200EFBB8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DC4DE3B1FCA3B9100EFBB8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DC4DE421FCA3B9100EFBB8A;
+			remoteInfo = PodcastTimer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6DC4DE431FCA3B9100EFBB8A /* PodcastTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DC4DE461FCA3B9100EFBB8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6DC4DE481FCA3B9100EFBB8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6DC4DE4B1FCA3B9100EFBB8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6DC4DE4D1FCA3B9100EFBB8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DC4DE501FCA3B9100EFBB8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6DC4DE521FCA3B9100EFBB8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DC4DE571FCA3B9200EFBB8A /* PodcastTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PodcastTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DC4DE5B1FCA3B9200EFBB8A /* PodcastTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastTimerTests.swift; sourceTree = "<group>"; };
+		6DC4DE5D1FCA3B9200EFBB8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DC4DE621FCA3B9200EFBB8A /* PodcastTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PodcastTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DC4DE661FCA3B9200EFBB8A /* PodcastTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastTimerUITests.swift; sourceTree = "<group>"; };
+		6DC4DE681FCA3B9200EFBB8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DC4DE401FCA3B9100EFBB8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC4DE541FCA3B9200EFBB8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC4DE5F1FCA3B9200EFBB8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DC4DE3A1FCA3B9100EFBB8A = {
+			isa = PBXGroup;
+			children = (
+				6DC4DE451FCA3B9100EFBB8A /* PodcastTimer */,
+				6DC4DE5A1FCA3B9200EFBB8A /* PodcastTimerTests */,
+				6DC4DE651FCA3B9200EFBB8A /* PodcastTimerUITests */,
+				6DC4DE441FCA3B9100EFBB8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DC4DE441FCA3B9100EFBB8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DC4DE431FCA3B9100EFBB8A /* PodcastTimer.app */,
+				6DC4DE571FCA3B9200EFBB8A /* PodcastTimerTests.xctest */,
+				6DC4DE621FCA3B9200EFBB8A /* PodcastTimerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DC4DE451FCA3B9100EFBB8A /* PodcastTimer */ = {
+			isa = PBXGroup;
+			children = (
+				6DC4DE461FCA3B9100EFBB8A /* AppDelegate.swift */,
+				6DC4DE481FCA3B9100EFBB8A /* ViewController.swift */,
+				6DC4DE4A1FCA3B9100EFBB8A /* Main.storyboard */,
+				6DC4DE4D1FCA3B9100EFBB8A /* Assets.xcassets */,
+				6DC4DE4F1FCA3B9100EFBB8A /* LaunchScreen.storyboard */,
+				6DC4DE521FCA3B9100EFBB8A /* Info.plist */,
+			);
+			path = PodcastTimer;
+			sourceTree = "<group>";
+		};
+		6DC4DE5A1FCA3B9200EFBB8A /* PodcastTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				6DC4DE5B1FCA3B9200EFBB8A /* PodcastTimerTests.swift */,
+				6DC4DE5D1FCA3B9200EFBB8A /* Info.plist */,
+			);
+			path = PodcastTimerTests;
+			sourceTree = "<group>";
+		};
+		6DC4DE651FCA3B9200EFBB8A /* PodcastTimerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6DC4DE661FCA3B9200EFBB8A /* PodcastTimerUITests.swift */,
+				6DC4DE681FCA3B9200EFBB8A /* Info.plist */,
+			);
+			path = PodcastTimerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DC4DE421FCA3B9100EFBB8A /* PodcastTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DC4DE6B1FCA3B9200EFBB8A /* Build configuration list for PBXNativeTarget "PodcastTimer" */;
+			buildPhases = (
+				6DC4DE3F1FCA3B9100EFBB8A /* Sources */,
+				6DC4DE401FCA3B9100EFBB8A /* Frameworks */,
+				6DC4DE411FCA3B9100EFBB8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PodcastTimer;
+			productName = PodcastTimer;
+			productReference = 6DC4DE431FCA3B9100EFBB8A /* PodcastTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DC4DE561FCA3B9200EFBB8A /* PodcastTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DC4DE6E1FCA3B9200EFBB8A /* Build configuration list for PBXNativeTarget "PodcastTimerTests" */;
+			buildPhases = (
+				6DC4DE531FCA3B9200EFBB8A /* Sources */,
+				6DC4DE541FCA3B9200EFBB8A /* Frameworks */,
+				6DC4DE551FCA3B9200EFBB8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DC4DE591FCA3B9200EFBB8A /* PBXTargetDependency */,
+			);
+			name = PodcastTimerTests;
+			productName = PodcastTimerTests;
+			productReference = 6DC4DE571FCA3B9200EFBB8A /* PodcastTimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6DC4DE611FCA3B9200EFBB8A /* PodcastTimerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DC4DE711FCA3B9200EFBB8A /* Build configuration list for PBXNativeTarget "PodcastTimerUITests" */;
+			buildPhases = (
+				6DC4DE5E1FCA3B9200EFBB8A /* Sources */,
+				6DC4DE5F1FCA3B9200EFBB8A /* Frameworks */,
+				6DC4DE601FCA3B9200EFBB8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DC4DE641FCA3B9200EFBB8A /* PBXTargetDependency */,
+			);
+			name = PodcastTimerUITests;
+			productName = PodcastTimerUITests;
+			productReference = 6DC4DE621FCA3B9200EFBB8A /* PodcastTimerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DC4DE3B1FCA3B9100EFBB8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Matt Dias";
+				TargetAttributes = {
+					6DC4DE421FCA3B9100EFBB8A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					6DC4DE561FCA3B9200EFBB8A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6DC4DE421FCA3B9100EFBB8A;
+					};
+					6DC4DE611FCA3B9200EFBB8A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6DC4DE421FCA3B9100EFBB8A;
+					};
+				};
+			};
+			buildConfigurationList = 6DC4DE3E1FCA3B9100EFBB8A /* Build configuration list for PBXProject "PodcastTimer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DC4DE3A1FCA3B9100EFBB8A;
+			productRefGroup = 6DC4DE441FCA3B9100EFBB8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DC4DE421FCA3B9100EFBB8A /* PodcastTimer */,
+				6DC4DE561FCA3B9200EFBB8A /* PodcastTimerTests */,
+				6DC4DE611FCA3B9200EFBB8A /* PodcastTimerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DC4DE411FCA3B9100EFBB8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DC4DE511FCA3B9100EFBB8A /* LaunchScreen.storyboard in Resources */,
+				6DC4DE4E1FCA3B9100EFBB8A /* Assets.xcassets in Resources */,
+				6DC4DE4C1FCA3B9100EFBB8A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC4DE551FCA3B9200EFBB8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC4DE601FCA3B9200EFBB8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DC4DE3F1FCA3B9100EFBB8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DC4DE491FCA3B9100EFBB8A /* ViewController.swift in Sources */,
+				6DC4DE471FCA3B9100EFBB8A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC4DE531FCA3B9200EFBB8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DC4DE5C1FCA3B9200EFBB8A /* PodcastTimerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC4DE5E1FCA3B9200EFBB8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DC4DE671FCA3B9200EFBB8A /* PodcastTimerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DC4DE591FCA3B9200EFBB8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DC4DE421FCA3B9100EFBB8A /* PodcastTimer */;
+			targetProxy = 6DC4DE581FCA3B9200EFBB8A /* PBXContainerItemProxy */;
+		};
+		6DC4DE641FCA3B9200EFBB8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DC4DE421FCA3B9100EFBB8A /* PodcastTimer */;
+			targetProxy = 6DC4DE631FCA3B9200EFBB8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6DC4DE4A1FCA3B9100EFBB8A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DC4DE4B1FCA3B9100EFBB8A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6DC4DE4F1FCA3B9100EFBB8A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DC4DE501FCA3B9100EFBB8A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DC4DE691FCA3B9200EFBB8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6DC4DE6A1FCA3B9200EFBB8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DC4DE6C1FCA3B9200EFBB8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Z4ZDG98FM;
+				INFOPLIST_FILE = PodcastTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattdias.PodcastTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6DC4DE6D1FCA3B9200EFBB8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Z4ZDG98FM;
+				INFOPLIST_FILE = PodcastTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattdias.PodcastTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6DC4DE6F1FCA3B9200EFBB8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Z4ZDG98FM;
+				INFOPLIST_FILE = PodcastTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattdias.PodcastTimerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PodcastTimer.app/PodcastTimer";
+			};
+			name = Debug;
+		};
+		6DC4DE701FCA3B9200EFBB8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Z4ZDG98FM;
+				INFOPLIST_FILE = PodcastTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattdias.PodcastTimerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PodcastTimer.app/PodcastTimer";
+			};
+			name = Release;
+		};
+		6DC4DE721FCA3B9200EFBB8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Z4ZDG98FM;
+				INFOPLIST_FILE = PodcastTimerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattdias.PodcastTimerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PodcastTimer;
+			};
+			name = Debug;
+		};
+		6DC4DE731FCA3B9200EFBB8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Z4ZDG98FM;
+				INFOPLIST_FILE = PodcastTimerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattdias.PodcastTimerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PodcastTimer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DC4DE3E1FCA3B9100EFBB8A /* Build configuration list for PBXProject "PodcastTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DC4DE691FCA3B9200EFBB8A /* Debug */,
+				6DC4DE6A1FCA3B9200EFBB8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DC4DE6B1FCA3B9200EFBB8A /* Build configuration list for PBXNativeTarget "PodcastTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DC4DE6C1FCA3B9200EFBB8A /* Debug */,
+				6DC4DE6D1FCA3B9200EFBB8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DC4DE6E1FCA3B9200EFBB8A /* Build configuration list for PBXNativeTarget "PodcastTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DC4DE6F1FCA3B9200EFBB8A /* Debug */,
+				6DC4DE701FCA3B9200EFBB8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DC4DE711FCA3B9200EFBB8A /* Build configuration list for PBXNativeTarget "PodcastTimerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DC4DE721FCA3B9200EFBB8A /* Debug */,
+				6DC4DE731FCA3B9200EFBB8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DC4DE3B1FCA3B9100EFBB8A /* Project object */;
+}

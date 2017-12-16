@@ -8,20 +8,84 @@
 
 import UIKit
 
+let hour = 3600
+let fiveMinutes = 5 * 60
+
 class CountDownViewController: UIViewController {
     
     @IBOutlet var timeLabel: UILabel!
+    @IBOutlet var pauseButton: UIButton!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    var timer = Timer()
+    var isRunning = false
+    var timeInSeconds: Int = hour {
+        didSet {
+            updateLabel(time: timeInSeconds)
+        }
     }
     
+    // MARK: -
+    // MARK: -
+    
+    func runTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 1,
+                                     target: self,
+                                     selector: #selector(updateTimer),
+                                     userInfo: nil,
+                                     repeats: true)
+    }
+    
+    // MARK: - Formatters
+    
+    func updateLabel(time: Int) {
+        if timeInSeconds >= 0 {
+            timeLabel.text = formattedTime(time: timeInSeconds)
+        } else {
+            timeLabel.text = "- " + formattedTime(time: -timeInSeconds)
+        }
+        
+        if time <= 0 {
+            self.view.backgroundColor = .red
+        } else if time <= fiveMinutes {
+            self.view.backgroundColor = .orange
+        }
+    }
+    
+    func formattedTime(time: Int) -> String {
+        let hours = time / hour
+        let minutes = (time / 60) % 60
+        let seconds = time % 60
+        
+        return String(format:"%02i:%02i:%02i", hours, minutes, seconds)
+    }
+    
+    // MARK: - Selectors
+    
+    @objc func updateTimer() {
+        timeInSeconds -= 1
+    }
+    
+    // MARK: - Actions
+    
     @IBAction func didTapStartStop(_ sender: UIButton) {
+        if isRunning {
+            timer.invalidate()
+            isRunning = false
+            
+            pauseButton.setTitle("Start", for: .normal)
+        } else {
+            runTimer()
+            isRunning = true
+            
+            pauseButton.setTitle("Pause", for: .normal)
+        }
     }
     
     @IBAction func didTapReset(_ sender: UIButton) {
+        timeInSeconds = hour
+        
+        timer.invalidate()
+        isRunning = false
+        pauseButton.setTitle("Start", for: .normal)
     }
-
 }

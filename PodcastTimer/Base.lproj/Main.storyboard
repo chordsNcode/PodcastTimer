@@ -49,12 +49,12 @@
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
                                         </variation>
                                         <connections>
-                                            <action selector="didTapStartStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Axf-uk-aQg"/>
+                                            <action selector="didTapStartStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uHf-Iu-EJk"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqd-6m-nD3">
                                         <rect key="frame" x="506" y="0.0" width="488" height="90"/>
-                                        <color key="backgroundColor" red="1" green="0.54412189409151657" blue="0.188047328342693" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                         <state key="normal" title="Set">
                                             <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
@@ -63,7 +63,7 @@
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
                                         </variation>
                                         <connections>
-                                            <action selector="didTapReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XcK-2p-wEw"/>
+                                            <action selector="didTapReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I5g-bj-YoE"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -83,8 +83,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="didTapReset" destination="aqd-6m-nD3" id="Geu-17-2hQ"/>
-                        <outlet property="timeLabel" destination="1Ex-kx-FC9" id="1QM-V1-JVW"/>
+                        <outlet property="pauseButton" destination="GKj-BM-aav" id="IKl-ct-5jG"/>
+                        <outlet property="timeLabel" destination="1Ex-kx-FC9" id="Hlo-2Y-Bb6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

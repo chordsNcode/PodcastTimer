@@ -26,6 +26,11 @@ class CountDownViewController: UIViewController {
     
     // MARK: -
     // MARK: -
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIApplication.shared.isIdleTimerDisabled = true
+    }
     
     func runTimer() {
         timer = Timer.scheduledTimer(timeInterval: 1,
@@ -86,6 +91,7 @@ class CountDownViewController: UIViewController {
         
         timer.invalidate()
         isRunning = false
+        self.view.backgroundColor = .black
         pauseButton.setTitle("Start", for: .normal)
     }
 }

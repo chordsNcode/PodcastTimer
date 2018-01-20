@@ -8,8 +8,11 @@
 
 import UIKit
 
-let hour = 3600
-let fiveMinutes = 5 * 60
+struct TimeUnits {
+    static let hour = 3600
+    static let fiveMinutes = 5 * 60
+}
+
 
 class CountDownViewController: UIViewController {
     
@@ -18,7 +21,7 @@ class CountDownViewController: UIViewController {
     
     var timer = Timer()
     var isRunning = false
-    var timeInSeconds: Int = hour {
+    var timeInSeconds: Int = TimeUnits.hour {
         didSet {
             updateLabel(time: timeInSeconds)
         }
@@ -51,13 +54,13 @@ class CountDownViewController: UIViewController {
         
         if time <= 0 {
             self.view.backgroundColor = .red
-        } else if time <= fiveMinutes {
+        } else if time <= TimeUnits.fiveMinutes {
             self.view.backgroundColor = .orange
         }
     }
     
     func formattedTime(time: Int) -> String {
-        let hours = time / hour
+        let hours = time / TimeUnits.hour
         let minutes = (time / 60) % 60
         let seconds = time % 60
         
@@ -87,7 +90,11 @@ class CountDownViewController: UIViewController {
     }
     
     @IBAction func didTapReset(_ sender: UIButton) {
-        timeInSeconds = hour
+        if let defaultTime = UserDefaults.standard.value(forKey: "defaultTimerValue") as? Int {
+            timeInSeconds = defaultTime
+        } else {
+            timeInSeconds = TimeUnits.hour
+        }
         
         timer.invalidate()
         isRunning = false

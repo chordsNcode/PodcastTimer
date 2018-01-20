@@ -14,6 +14,9 @@
 		6DC4DE5C1FCA3B9200EFBB8A /* PodcastTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC4DE5B1FCA3B9200EFBB8A /* PodcastTimerTests.swift */; };
 		6DC4DE671FCA3B9200EFBB8A /* PodcastTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC4DE661FCA3B9200EFBB8A /* PodcastTimerUITests.swift */; };
 		6DC4DE781FCA3CFE00EFBB8A /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC4DE771FCA3CFE00EFBB8A /* CountDownViewController.swift */; };
+		6DCC8AED200C53D300E53E27 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCC8AEC200C53D300E53E27 /* SettingsViewController.swift */; };
+		6DCC8AF020117A6300E53E27 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCC8AEE20117A6300E53E27 /* PickerViewController.swift */; };
+		6DCC8AF120117A6300E53E27 /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DCC8AEF20117A6300E53E27 /* PickerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6DC4DE431FCA3B9100EFBB8A /* PodcastTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DC4DE431FCA3B9100EFBB8A /* ProcastTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProcastTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC4DE461FCA3B9100EFBB8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DC4DE4B1FCA3B9100EFBB8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DC4DE4D1FCA3B9100EFBB8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		6DC4DE661FCA3B9200EFBB8A /* PodcastTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastTimerUITests.swift; sourceTree = "<group>"; };
 		6DC4DE681FCA3B9200EFBB8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DC4DE771FCA3CFE00EFBB8A /* CountDownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDownViewController.swift; sourceTree = "<group>"; };
+		6DCC8AEC200C53D300E53E27 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6DCC8AEE20117A6300E53E27 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		6DCC8AEF20117A6300E53E27 /* PickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +93,7 @@
 		6DC4DE441FCA3B9100EFBB8A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6DC4DE431FCA3B9100EFBB8A /* PodcastTimer.app */,
+				6DC4DE431FCA3B9100EFBB8A /* ProcastTimer.app */,
 				6DC4DE571FCA3B9200EFBB8A /* PodcastTimerTests.xctest */,
 				6DC4DE621FCA3B9200EFBB8A /* PodcastTimerUITests.xctest */,
 			);
@@ -129,6 +135,9 @@
 			isa = PBXGroup;
 			children = (
 				6DC4DE771FCA3CFE00EFBB8A /* CountDownViewController.swift */,
+				6DCC8AEC200C53D300E53E27 /* SettingsViewController.swift */,
+				6DCC8AEE20117A6300E53E27 /* PickerViewController.swift */,
+				6DCC8AEF20117A6300E53E27 /* PickerViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -150,7 +159,7 @@
 			);
 			name = PodcastTimer;
 			productName = PodcastTimer;
-			productReference = 6DC4DE431FCA3B9100EFBB8A /* PodcastTimer.app */;
+			productReference = 6DC4DE431FCA3B9100EFBB8A /* ProcastTimer.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6DC4DE561FCA3B9200EFBB8A /* PodcastTimerTests */ = {
@@ -242,6 +251,7 @@
 			files = (
 				6DC4DE511FCA3B9100EFBB8A /* LaunchScreen.storyboard in Resources */,
 				6DC4DE4E1FCA3B9100EFBB8A /* Assets.xcassets in Resources */,
+				6DCC8AF120117A6300E53E27 /* PickerViewController.xib in Resources */,
 				6DC4DE4C1FCA3B9100EFBB8A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +279,8 @@
 			files = (
 				6DC4DE781FCA3CFE00EFBB8A /* CountDownViewController.swift in Sources */,
 				6DC4DE471FCA3B9100EFBB8A /* AppDelegate.swift in Sources */,
+				6DCC8AF020117A6300E53E27 /* PickerViewController.swift in Sources */,
+				6DCC8AED200C53D300E53E27 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +386,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = ProcastTimer;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -424,6 +437,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ProcastTimer;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -438,8 +452,8 @@
 				DEVELOPMENT_TEAM = 3Z4ZDG98FM;
 				INFOPLIST_FILE = PodcastTimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mattdias.PodcastTimer;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattdias.timer;
+				PRODUCT_NAME = "$(inherited)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -453,8 +467,8 @@
 				DEVELOPMENT_TEAM = 3Z4ZDG98FM;
 				INFOPLIST_FILE = PodcastTimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mattdias.PodcastTimer;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattdias.timer;
+				PRODUCT_NAME = "$(inherited)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

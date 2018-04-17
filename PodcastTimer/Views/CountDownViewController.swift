@@ -15,6 +15,7 @@ class CountDownViewController: UIViewController {
     
     @IBOutlet var timeLabel: UILabel!
     @IBOutlet var pauseButton: UIButton!
+    @IBOutlet var pickerView: UIPickerView!
     
     var timer = Timer()
     var isRunning = false

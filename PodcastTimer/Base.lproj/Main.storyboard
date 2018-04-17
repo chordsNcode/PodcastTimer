@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,8 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GRh-4K-VwB">
+                                <rect key="frame" x="265" y="276" width="494" height="216"/>
+                                <color key="backgroundColor" red="1" green="0.57794249499999995" blue="0.25438690089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ex-kx-FC9">
-                                <rect key="frame" x="265" y="318.5" width="494" height="131.5"/>
+                                <rect key="frame" x="265" y="276.5" width="494" height="216"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                 <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -74,16 +78,21 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="GRh-4K-VwB" firstAttribute="top" secondItem="1Ex-kx-FC9" secondAttribute="top" id="4Up-N7-LYN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tKo-PN-6KI" secondAttribute="trailing" constant="15" id="CCd-Sc-6Mz"/>
                             <constraint firstItem="1Ex-kx-FC9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QNO-I5-sXT"/>
+                            <constraint firstItem="GRh-4K-VwB" firstAttribute="leading" secondItem="1Ex-kx-FC9" secondAttribute="leading" id="Uew-R2-afg"/>
                             <constraint firstItem="1Ex-kx-FC9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vt8-KC-7vn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tKo-PN-6KI" secondAttribute="bottom" constant="5" id="ZxN-oM-bLl"/>
+                            <constraint firstItem="GRh-4K-VwB" firstAttribute="bottom" secondItem="1Ex-kx-FC9" secondAttribute="bottom" id="e1s-DC-039"/>
                             <constraint firstItem="tKo-PN-6KI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="fnU-YF-kTq"/>
+                            <constraint firstItem="GRh-4K-VwB" firstAttribute="trailing" secondItem="1Ex-kx-FC9" secondAttribute="trailing" id="hiw-CQ-GPh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="pauseButton" destination="GKj-BM-aav" id="IKl-ct-5jG"/>
+                        <outlet property="pickerView" destination="GRh-4K-VwB" id="VJb-r3-s4L"/>
                         <outlet property="timeLabel" destination="1Ex-kx-FC9" id="Hlo-2Y-Bb6"/>
                     </connections>
                 </viewController>

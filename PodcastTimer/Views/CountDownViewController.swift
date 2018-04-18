@@ -17,6 +17,7 @@ class CountDownViewController: UIViewController {
     @IBOutlet var pauseButton: UIButton!
     @IBOutlet var pickerView: UIPickerView!
     
+    var savableTime = hour
     var timer = Timer()
     var isRunning = false
     var timeInSeconds: Int = hour {
@@ -27,6 +28,13 @@ class CountDownViewController: UIViewController {
     
     // MARK: -
     // MARK: -
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        pickerView.delegate = self
+        pickerView.dataSource = self
+    }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -52,7 +60,7 @@ class CountDownViewController: UIViewController {
         
         if time <= 0 {
             self.view.backgroundColor = .red
-        } else if time <= fiveMinutes {
+        } else if Double(time) <= Double(savableTime) * 0.083 {
             self.view.backgroundColor = .orange
         }
     }
@@ -88,11 +96,46 @@ class CountDownViewController: UIViewController {
     }
     
     @IBAction func didTapReset(_ sender: UIButton) {
-        timeInSeconds = hour
+        let defaultHour = pickerView.selectedRow(inComponent: 0)
+        let defaultMin = pickerView.selectedRow(inComponent: 1)
+        let defaultSec = pickerView.selectedRow(inComponent: 2)
+        savableTime = (defaultHour * hour) + (defaultMin * 60) + defaultSec
+        
+        pickerView.isHidden = !pickerView.isHidden
+        timeLabel.isHidden = !timeLabel.isHidden
+        
+        timeLabel.text = formattedTime(time: savableTime)
+        
+        timeInSeconds = savableTime
         
         timer.invalidate()
         isRunning = false
         self.view.backgroundColor = .black
         pauseButton.setTitle("Start", for: .normal)
+    }
+}
+
+extension CountDownViewController: UIPickerViewDelegate {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return String(format: "%02d", row)
+    }
+}
+
+extension CountDownViewController: UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 3
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        switch component {
+        case 0:
+            return 24
+        case 1:
+            return 60
+        case 2:
+            return 60
+        default:
+            return 0
+        }
     }
 }
